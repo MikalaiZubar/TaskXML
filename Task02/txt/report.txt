@@ -1,0 +1,26 @@
+==========================================================================================
+StartTariff StartOne { id 1: subscribtion fee 0.0}
+StartTariff StartTwo { id 3: subscribtion fee 0.0}
+MidiTariff  MidiOne { id 3: subscribtion fee 100.0}
+MidiTariff  MidiTwo { id 1: subscribtion fee 120.0}
+SuperTariff SuperOne { id 2: subscribtion fee 200.0}
+SuperTariff SuperTwo { id 1: subscribtion fee 250.0}
+==========================================================================================
+subscriberName='One', sumOfPayment=300.0, currentAccount=300.0, subscriberId=1, tariff=StartOne
+subscriberName='Two', sumOfPayment=200.0, currentAccount=200.0, subscriberId=2, tariff=StartOne
+subscriberName='Three', sumOfPayment=250.0, currentAccount=150.0, subscriberId=3, tariff=MidiOne
+subscriberName='Four', sumOfPayment=400.0, currentAccount=280.0, subscriberId=4, tariff=MidiTwo
+subscriberName='Five', sumOfPayment=500.0, currentAccount=300.0, subscriberId=5, tariff=SuperOne
+subscriberName='Nine', sumOfPayment=350.0, currentAccount=350.0, subscriberId=6, tariff=StartOne
+subscriberName='Ten', sumOfPayment=400.0, currentAccount=280.0, subscriberId=7, tariff=MidiTwo
+subscriberName='Eleven', sumOfPayment=500.0, currentAccount=300.0, subscriberId=8, tariff=SuperOne
+subscriberName='Twelve', sumOfPayment=450.0, currentAccount=200.0, subscriberId=9, tariff=SuperTwo
+subscriberName='Thirteen', sumOfPayment=240.0, currentAccount=120.0, subscriberId=10, tariff=MidiTwo
+==========================================================================================
+Total subscribers amount: 10
+==========================================================================================
+Recommended tariffs:
+StartTariff StartOne { id 1: subscribtion fee 0.0}
+StartTariff StartTwo { id 3: subscribtion fee 0.0}
+SuperTariff SuperOne { id 2: subscribtion fee 200.0}
+MidiTariff  MidiOne { id 3: subscribtion fee 100.0}

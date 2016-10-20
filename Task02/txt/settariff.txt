@@ -1,0 +1,12 @@
+start StartOne 0.50 0.20
+midi MidiTwo 120.0 0.25 0.15 80 100
+start StartTwo 0.40 0.25
+hty StartTwo 0.40 0.25
+super SuperTwo 250.0 0.20 0.10 0.05 100 150 2048
+start StartFour one two three
+super SuperThree 250.0 0.20 0.10 .0.03 120 160 1024 2048
+start StartOne -0.50 0.20
+midi MidiOne 100.0 0.30 0.15 60 100
+
+midi MidiThree 100 0.30 0.20 -60 90
+super SuperOne 200.0 0.20 0.10 0.05 100 150 1024
