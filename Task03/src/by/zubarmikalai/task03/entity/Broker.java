@@ -1,6 +1,7 @@
 package by.zubarmikalai.task03.entity;
 
 import by.zubarmikalai.task03.action.Trade;
+import by.zubarmikalai.task03.creator.IdCreator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,17 +18,16 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Broker extends Thread{
 
     private static final Logger LOGGER = LogManager.getLogger(Broker.class);
-    private static long count = 0;
-    private long id = ++count;
+    private long id;
     private double account;
     private double active;
-    private List<Stock> brokerStockList = Exchange.receiveStockList();
+    private List<Stock> brokerStockList = StockExchange.receiveStockList();
     private Map<Stock, Integer> brokerStockStore = new LinkedHashMap<>();
-    private  Lock lock = new ReentrantLock();
+    private Lock lock = new ReentrantLock();
 
     public Broker( double account){
         this.account = account;
-
+        id = IdCreator.createBrokerId();
     }
 
     public List<Stock> getBrokerStockList() {
@@ -60,22 +60,27 @@ public class Broker extends Thread{
     }
 
     public void run(){
-        while(!Exchange.isClosed()){
+        while(!StockExchange.isClosed()){
+            lock.lock();
             try {
-                if(lock.tryLock(10,TimeUnit.MILLISECONDS))
                 Trade.buyStockPack(this);
                 LOGGER.info("Broker "+this.getId()+" is buying");
                 TimeUnit.MILLISECONDS.sleep(10);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                LOGGER.error("Broker " + this.getId() + " interrupted", e);
+            }finally {
+                lock.unlock();
             }
+
+            lock.lock();
             try {
-                if(lock.tryLock(10,TimeUnit.MILLISECONDS))
                 Trade.sellStockPack(this);
                 LOGGER.info("Broker "+this.getId()+" is selling");
                 TimeUnit.MILLISECONDS.sleep(10);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                LOGGER.error("Broker " + this.getId() + " interrupted", e);
+            }finally {
+                lock.unlock();
             }
         }
     }
@@ -85,7 +90,7 @@ public class Broker extends Thread{
         return "Broker{" +
                 "id=" + id +
                 ", account=" + account +
-                '}';
+                ", active=" + active + '}';
     }
 
 

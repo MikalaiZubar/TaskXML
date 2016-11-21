@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.mikalaizubar.com/tariffs"
+   xsi:schemalocation="htt://www.mikalaizubar.com/tariffs tariff.xsd">
+    <voice-tariff name="Easy_to_say" operator="MTS">
+        <payroll>0.55</payroll>
+        <call-prices>
+            <internal-call>0.07</internal-call>
+            <external-call>0.14</external-call>
+            <international-call>1.38</international-call>
+        </call-prices>
+        <message-prices>
+            <sms-price>0.04</sms-price>
+            <mms-price>0.08</mms-price>
+        </message-prices>
+        <parameters>
+            <min-prepayment>3.00</min-prepayment>
+            <tarification>60</tarification>
+            <fav-numbs>3</fav-numbs>
+        </parameters>
+    </voice-tariff>
+    <internet-tariff name="Business.PRO" operator="Velcom">
+        <payroll>14.90</payroll>
+        <call-prices>
+            <internal-call>0.01</internal-call>
+            <external-call>0.08</external-call>
+            <international-call>1.17</international-call>
+        </call-prices>
+        <message-prices>
+            <sms-price>0.04</sms-price>
+            <mms-price>0.15</mms-price>
+        </message-prices>
+        <parameters>
+            <min-prepayment>5.00</min-prepayment>
+            <tarification>12</tarification>
+            <fav-numbs>5</fav-numbs>
+        </parameters>
+        <internet>
+            <included-mb>2000</included-mb>
+            <mb-price>0.02</mb-price>
+        </internet>
+    </internet-tariff>
+</tariffs>

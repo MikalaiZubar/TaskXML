@@ -1,18 +1,20 @@
 package by.zubarmikalai.task03.entity;
 
 
+import by.zubarmikalai.task03.creator.IdCreator;
+
 /**
  * Created by Nick on 11.10.16.
  */
 public class Stock {
-    private static long count = 0;
-    private long id = count++;
+    private long id;
     private double cost;
     private int issue;
 
     public Stock(double cost, int issue){
         this.cost = cost;
         this.issue = issue;
+        id = IdCreator.createStockId();
     }
 
     public double getCost() {

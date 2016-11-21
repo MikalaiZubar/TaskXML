@@ -1,4 +1,4 @@
-package by.zubarmikalai.task03.action;
+package by.zubarmikalai.task03.creator;
 
 import by.zubarmikalai.task03.entity.Broker;
 import by.zubarmikalai.task03.entity.Stock;
@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class Creator {
     private static final double BROKER_ACCOUNT = 1_000_000.0;
-    private static final int STOCK_ISSUE = 100_000;
+    private static final int STOCK_ISSUE = 300_000;
 
     public static List<Broker> createBrokerList(){
         double account = BROKER_ACCOUNT;

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+  targetNamespace="http://www.mikalaizubar.com/tariffs"
+  xmlns:tns="http://www.mikalaizubar.com/tariffs"
+  elementFormDefault="qualified" >
+  <element name="tariff" type="tns:TariffType" abstract="true"></element>
+  <element name="voice-tariff" type="tns:VoiceTariff" substitutionGroup="tns:tariff"></element>
+  <element name="internet-tariff" type="tns:InternetTariff" substitutionGroup="tns:tariff"></element>
+  <element name="tariffs">
+    <complexType>
+      <sequence>
+        <element ref="tns:tariff" minOccurs="1" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+  <complexType name="TariffType">
+    <sequence>
+      <element name="payroll" type="tns:PositiveNumber"/>
+      <element name="call-prices" type="tns:CallPrices"/>
+      <element name="message-prices" type="tns:MessagePrices"/>
+    </sequence>
+    <attribute name="name" type="tns:Name" use="required"/>
+    <attribute name="operator" type="tns:Operator" use="optional"/>
+  </complexType>
+  <simpleType name="Name">
+    <restriction base="ID">
+      <pattern value="[A-Za-z0-9.-_]{1,}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="Operator">
+    <restriction base="string">
+      <enumeration value="Velcom"/>
+      <enumeration value="MTS"/>
+      <enumeration value="Life"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="PositiveNumber">
+    <restriction base="decimal">
+      <minInclusive value="0"/>
+    </restriction>
+  </simpleType>
+ <complexType name="CallPrices">
+   <sequence>
+     <element name="internal-call" type="tns:PositiveNumber"/>
+     <element name="external-call" type="tns:PositiveNumber"/>
+     <element name="international-call" type="tns:PositiveNumber"/>
+   </sequence>
+ </complexType>
+ <complexType name="MessagePrices">
+   <sequence>
+     <element name="sms-price" type="tns:PositiveNumber"/>
+     <element name="mms-price" type="tns:PositiveNumber"/>
+   </sequence>
+ </complexType>
+ <complexType name="VoiceTariff">
+   <complexContent>
+     <extension base="tns:TariffType">
+       <sequence>
+         <element name="parameters" type="tns:Parameters"/>
+       </sequence>
+     </extension>
+   </complexContent>
+ </complexType>
+ <complexType name="Parameters">
+   <sequence>
+     <element name="min-prepayment" type="tns:PositiveNumber"/>
+     <element name="tarification" type="tns:Tarification"/>
+     <element name="fav-numbs" type="tns:PositiveInt"/>
+   </sequence>
+ </complexType>
+  <simpleType name="Tarification">
+    <restriction base="integer">
+      <enumeration value="1"/>
+      <enumeration value="12"/>
+      <enumeration value="60"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="PositiveInt">
+    <restriction base="integer">
+      <minInclusive value="0"/>
+    </restriction>
+  </simpleType>
+  <complexType name="InternetTariff">
+    <complexContent>
+      <extension base="tns:VoiceTariff">
+        <sequence>
+          <element name="internet" type="tns:Internet"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Internet">
+    <sequence>
+      <element name="included-mb" type="tns:PositiveInt"/>
+      <element name="mb-price" type="tns:PositiveNumber"/>
+    </sequence>
+  </complexType>
+</schema>

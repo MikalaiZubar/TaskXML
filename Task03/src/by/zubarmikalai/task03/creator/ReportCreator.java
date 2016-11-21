@@ -1,7 +1,7 @@
-package by.zubarmikalai.task03.action;
+package by.zubarmikalai.task03.creator;
 
 import by.zubarmikalai.task03.entity.Broker;
-import by.zubarmikalai.task03.entity.Exchange;
+import by.zubarmikalai.task03.entity.StockExchange;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,13 +14,13 @@ import java.util.List;
 public class ReportCreator {
 
     private static final Logger LOGGER = LogManager.getLogger(ReportCreator.class);
+    private static final String ROOT = "report/report.txt";
 
     public static void createReport(){
-        String root = "report/report.txt";
-        File report = new File(root);
-        List<Broker> brokerList = Exchange.receiveBrokerList();
-        FileWriter fileWriter = null;
-        BufferedWriter bufferedReader = null;
+        File report = new File(ROOT);
+        List<Broker> brokerList = StockExchange.receiveBrokerList();
+        FileWriter fileWriter;
+        BufferedWriter bufferedReader;
         PrintWriter printWriter = null;
         try{
             fileWriter = new FileWriter(report, false);

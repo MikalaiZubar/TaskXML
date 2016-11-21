@@ -1,4 +1,4 @@
-package by.zubarmikalai.task03.action;
+package by.zubarmikalai.task03.comparator;
 
 import by.zubarmikalai.task03.entity.Broker;
 

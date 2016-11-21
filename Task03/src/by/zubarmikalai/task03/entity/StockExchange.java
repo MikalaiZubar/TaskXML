@@ -1,19 +1,18 @@
 package by.zubarmikalai.task03.entity;
 
-import by.zubarmikalai.task03.action.BrokerComparator;
-import by.zubarmikalai.task03.action.Creator;
+import by.zubarmikalai.task03.comparator.BrokerComparator;
+import by.zubarmikalai.task03.creator.Creator;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by Nick on 11.10.16.
  */
-public class Exchange {
-    private static Exchange exchange = null;
+public class StockExchange {
+    private static StockExchange stockExchange;
     private static ReentrantLock lock = new ReentrantLock();
     private static List<Broker> brokerList;
     private static List<Stock> stockList;
@@ -21,22 +20,23 @@ public class Exchange {
     private static boolean closed;
 
 
-    private Exchange() {
+    private StockExchange() {
         stockList = Creator.createStockList();
         stockStore = Creator.createExchangeStockStore(stockList);
         brokerList = Creator.createBrokerList();
     }
 
-    public static Exchange getExchange() {
+    public static StockExchange getStockExchange() {
         lock.lock();
         try {
-            if (exchange == null) {
-                exchange = new Exchange();
+            if (stockExchange == null) {
+                stockExchange = new StockExchange();
+
             }
         } finally {
             lock.unlock();
         }
-        return exchange;
+        return stockExchange;
     }
 
     public static List<Broker> receiveBrokerList() {
@@ -56,7 +56,7 @@ public class Exchange {
     }
 
     public static void setClosed(boolean closed) {
-        Exchange.closed = closed;
+        StockExchange.closed = closed;
     }
 
     public static void startTrading() {

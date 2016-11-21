@@ -1,0 +1,103 @@
+INFO  | 2016-11-14 21:01:08 | [main]  - unchanged. has survived not only five centuries, but also the leap into 16 electronic 2 typesetting, remaining 8 essentially -3 It 
+INFO  | 2016-11-14 21:01:08 | [main]  - Ipsum. was popularised in the 5 with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem It 
+INFO  | 2016-11-14 21:01:08 | [main]  - layout. is a long established fact that a reader will be distracted by the readable content of a page when looking at its It 
+INFO  | 2016-11-14 21:01:08 | [main]  - English. point of using 6 Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable The 
+INFO  | 2016-11-14 21:01:08 | [main]  - layout. is a 1200 established fact that a reader will be of a page when looking at its It 
+INFO  | 2016-11-14 21:01:08 | [main]  - Hello. 
+INFO  | 2016-11-14 21:01:08 | [main]  - It has survived not only five centuries, but also the leap into 16 electronic 2 typesetting, remaining 8 essentially -3 unchanged. 
+INFO  | 2016-11-14 21:01:08 | [main]  - It was popularised in the 5 with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+INFO  | 2016-11-14 21:01:08 | [main]  - It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+INFO  | 2016-11-14 21:01:08 | [main]  - The point of using 6 Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+INFO  | 2016-11-14 21:01:08 | [main]  - It is a 1200 established fact that a reader will be of a page when looking at its layout. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Hello. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Number of lexemes: 1 : Hello. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Number of lexemes: 19 : It is a 1200 established fact that a reader will be of a page when looking at its layout. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Number of lexemes: 21 : It has survived not only five centuries, but also the leap into 16 electronic 2 typesetting, remaining 8 essentially -3 unchanged. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Number of lexemes: 24 : It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Number of lexemes: 30 : The point of using 6 Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+INFO  | 2016-11-14 21:01:08 | [main]  - Number of lexemes: 31 : It was popularised in the 5 with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+INFO  | 2016-11-14 21:01:08 | [main]  - 	'Content
+INFO  | 2016-11-14 21:01:08 | [main]  - 	-3
+INFO  | 2016-11-14 21:01:08 | [main]  - 	1200
+INFO  | 2016-11-14 21:01:08 | [main]  - 16
+INFO  | 2016-11-14 21:01:08 | [main]  - 	2
+INFO  | 2016-11-14 21:01:08 | [main]  - 	5
+INFO  | 2016-11-14 21:01:08 | [main]  - 	6
+INFO  | 2016-11-14 21:01:08 | [main]  - 	8
+INFO  | 2016-11-14 21:01:08 | [main]  - 	Aldus
+INFO  | 2016-11-14 21:01:08 | [main]  - 	English.
+INFO  | 2016-11-14 21:01:08 | [main]  - 	Hello.
+INFO  | 2016-11-14 21:01:08 | [main]  - 	Ipsum
+INFO  | 2016-11-14 21:01:08 | [main]  - Ipsum.
+INFO  | 2016-11-14 21:01:08 | [main]  - It
+INFO  | 2016-11-14 21:01:08 | [main]  - 	Letraset
+INFO  | 2016-11-14 21:01:08 | [main]  - Lorem
+INFO  | 2016-11-14 21:01:08 | [main]  - 	PageMaker
+INFO  | 2016-11-14 21:01:08 | [main]  - 	The
+INFO  | 2016-11-14 21:01:08 | [main]  - 	a
+INFO  | 2016-11-14 21:01:08 | [main]  - also
+INFO  | 2016-11-14 21:01:08 | [main]  - and
+INFO  | 2016-11-14 21:01:08 | [main]  - as
+INFO  | 2016-11-14 21:01:08 | [main]  - at
+INFO  | 2016-11-14 21:01:08 | [main]  - 	be
+INFO  | 2016-11-14 21:01:08 | [main]  - but
+INFO  | 2016-11-14 21:01:08 | [main]  - by
+INFO  | 2016-11-14 21:01:08 | [main]  - 	centuries,
+INFO  | 2016-11-14 21:01:08 | [main]  - containing
+INFO  | 2016-11-14 21:01:08 | [main]  - content
+INFO  | 2016-11-14 21:01:08 | [main]  - 	desktop
+INFO  | 2016-11-14 21:01:08 | [main]  - distracted
+INFO  | 2016-11-14 21:01:08 | [main]  - distribution
+INFO  | 2016-11-14 21:01:08 | [main]  - 	electronic
+INFO  | 2016-11-14 21:01:08 | [main]  - essentially
+INFO  | 2016-11-14 21:01:08 | [main]  - established
+INFO  | 2016-11-14 21:01:08 | [main]  - 	fact
+INFO  | 2016-11-14 21:01:08 | [main]  - five
+INFO  | 2016-11-14 21:01:08 | [main]  - 	has
+INFO  | 2016-11-14 21:01:08 | [main]  - here',
+INFO  | 2016-11-14 21:01:08 | [main]  - here,
+INFO  | 2016-11-14 21:01:08 | [main]  - 	in
+INFO  | 2016-11-14 21:01:08 | [main]  - including
+INFO  | 2016-11-14 21:01:08 | [main]  - into
+INFO  | 2016-11-14 21:01:08 | [main]  - is
+INFO  | 2016-11-14 21:01:08 | [main]  - it
+INFO  | 2016-11-14 21:01:08 | [main]  - its
+INFO  | 2016-11-14 21:01:08 | [main]  - 	layout.
+INFO  | 2016-11-14 21:01:08 | [main]  - leap
+INFO  | 2016-11-14 21:01:08 | [main]  - letters,
+INFO  | 2016-11-14 21:01:08 | [main]  - like
+INFO  | 2016-11-14 21:01:08 | [main]  - long
+INFO  | 2016-11-14 21:01:08 | [main]  - look
+INFO  | 2016-11-14 21:01:08 | [main]  - looking
+INFO  | 2016-11-14 21:01:08 | [main]  - 	making
+INFO  | 2016-11-14 21:01:08 | [main]  - more
+INFO  | 2016-11-14 21:01:08 | [main]  - more-or-less
+INFO  | 2016-11-14 21:01:08 | [main]  - 	normal
+INFO  | 2016-11-14 21:01:08 | [main]  - not
+INFO  | 2016-11-14 21:01:08 | [main]  - 	of
+INFO  | 2016-11-14 21:01:08 | [main]  - only
+INFO  | 2016-11-14 21:01:08 | [main]  - opposed
+INFO  | 2016-11-14 21:01:08 | [main]  - 	page
+INFO  | 2016-11-14 21:01:08 | [main]  - passages,
+INFO  | 2016-11-14 21:01:08 | [main]  - point
+INFO  | 2016-11-14 21:01:08 | [main]  - popularised
+INFO  | 2016-11-14 21:01:08 | [main]  - publishing
+INFO  | 2016-11-14 21:01:08 | [main]  - 	readable
+INFO  | 2016-11-14 21:01:08 | [main]  - reader
+INFO  | 2016-11-14 21:01:08 | [main]  - recently
+INFO  | 2016-11-14 21:01:08 | [main]  - release
+INFO  | 2016-11-14 21:01:08 | [main]  - remaining
+INFO  | 2016-11-14 21:01:08 | [main]  - 	sheets
+INFO  | 2016-11-14 21:01:08 | [main]  - software
+INFO  | 2016-11-14 21:01:08 | [main]  - survived
+INFO  | 2016-11-14 21:01:08 | [main]  - 	that
+INFO  | 2016-11-14 21:01:08 | [main]  - the
+INFO  | 2016-11-14 21:01:08 | [main]  - to
+INFO  | 2016-11-14 21:01:08 | [main]  - typesetting,
+INFO  | 2016-11-14 21:01:08 | [main]  - 	unchanged.
+INFO  | 2016-11-14 21:01:08 | [main]  - using
+INFO  | 2016-11-14 21:01:08 | [main]  - 	versions
+INFO  | 2016-11-14 21:01:08 | [main]  - 	was
+INFO  | 2016-11-14 21:01:08 | [main]  - when
+INFO  | 2016-11-14 21:01:08 | [main]  - will
+INFO  | 2016-11-14 21:01:08 | [main]  - with
